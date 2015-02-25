@@ -55,7 +55,7 @@
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="96" name="Values" color="7" fill="1" visible="no" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
@@ -461,7 +461,7 @@
 <wire x1="-6.3" y1="0" x2="6.3" y2="0" width="0.127" layer="21"/>
 <text x="0" y="7" size="0.6096" layer="25" ratio="18" align="center">&gt;Name</text>
 </package>
-<package name="E_0603">
+<package name="E_0603@1">
 <smd name="P$1" x="-0.9" y="0" dx="0.9" dy="0.9" layer="1" roundness="25"/>
 <smd name="P$2" x="0.9" y="0" dx="0.9" dy="0.9" layer="1" roundness="25" rot="R270"/>
 <text x="0" y="0" size="0.6096" layer="25" font="vector" ratio="18" distance="44" align="center">&gt;Name</text>
@@ -470,7 +470,7 @@
 <wire x1="-1" y1="0.5" x2="1" y2="0.5" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.5" x2="1" y2="-0.5" width="0.127" layer="21"/>
 </package>
-<package name="E_1206">
+<package name="E_1206@1">
 <smd name="P$1" x="1.65" y="0" dx="1.2" dy="1.8" layer="1" roundness="25" rot="R180"/>
 <smd name="P$2" x="-1.65" y="0" dx="1.2" dy="1.8" layer="1" roundness="25" rot="R180"/>
 <text x="0" y="0" size="0.6096" layer="25" font="vector" ratio="18" distance="44" align="center">&gt;Name</text>
@@ -811,7 +811,7 @@
 <text x="-35.56" y="7.62" size="1.778" layer="95" ratio="7" align="top-left">&gt;Name</text>
 <text x="-35.56" y="5.08" size="1.778" layer="96" ratio="7" align="top-left">&gt;Value</text>
 </symbol>
-<symbol name="E_CAPACITOR">
+<symbol name="E_CAPACITOR@1">
 <pin name="P$1" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="P$2" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-0.635" width="0.1524" layer="94"/>
@@ -831,7 +831,7 @@
 <wire x1="1.27" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="E_RESISTOR">
+<symbol name="E_RESISTOR@1">
 <pin name="P$1" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="P$2" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <text x="2.54" y="-5.08" size="1.778" layer="95" font="vector" ratio="7" distance="44" rot="R90" align="top-left">&gt;Name</text>
@@ -989,7 +989,7 @@
 <text x="10.16" y="-5.08" size="1.778" layer="95" align="top-left">&gt;Name</text>
 <text x="10.16" y="-7.62" size="1.778" layer="95" align="top-left">&gt;Value</text>
 </symbol>
-<symbol name="E_CRYSTAL">
+<symbol name="E_CRYSTAL@1">
 <pin name="P$1" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="P$2" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
@@ -1202,10 +1202,10 @@
 </deviceset>
 <deviceset name="CAPACITOR">
 <gates>
-<gate name="G$1" symbol="E_CAPACITOR" x="0" y="0"/>
+<gate name="G$1" symbol="E_CAPACITOR@1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="E_0603">
+<device name="0603" package="E_0603@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1214,7 +1214,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="1206" package="E_1206">
+<device name="1206" package="E_1206@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1230,7 +1230,7 @@
 <gate name="G$1" symbol="E_INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="E_0603">
+<device name="0603" package="E_0603@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1239,7 +1239,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="1206" package="E_1206">
+<device name="1206" package="E_1206@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1261,10 +1261,10 @@
 </deviceset>
 <deviceset name="RESISTOR" prefix="5" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="E_RESISTOR" x="0" y="0"/>
+<gate name="G$1" symbol="E_RESISTOR@1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="E_0603">
+<device name="0603" package="E_0603@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1273,7 +1273,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="1206" package="E_1206">
+<device name="1206" package="E_1206@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1289,7 +1289,7 @@
 <gate name="G$1" symbol="E_LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="E_0603">
+<device name="0603" package="E_0603@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1298,7 +1298,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="1206" package="E_1206">
+<device name="1206" package="E_1206@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1352,7 +1352,7 @@
 <gate name="G$1" symbol="E_DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="E_0603">
+<device name="0603" package="E_0603@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1361,7 +1361,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="1206" package="E_1206">
+<device name="1206" package="E_1206@1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1456,7 +1456,7 @@
 </deviceset>
 <deviceset name="CTS406">
 <gates>
-<gate name="G$1" symbol="E_CRYSTAL" x="0" y="0"/>
+<gate name="G$1" symbol="E_CRYSTAL@1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="CTS_CRYSTAL">
